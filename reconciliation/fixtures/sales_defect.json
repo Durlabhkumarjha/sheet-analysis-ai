@@ -1,0 +1,14 @@
+{
+  "name": "sales_units_as_dollars",
+  "domain": "sales",
+  "description": "A small-magnitude units column ('units_sold', max 850, no price evidence) is reported with a $ and a currency unit. C3 must block the units-as-dollars mislabel.",
+  "expect": { "verdict": "BLOCK", "checks": ["C3"] },
+  "columns": [
+    { "name": "units_sold", "inferredRole": "measure", "declaredUnit": "units", "dtype": "float", "distinctCount": 300, "colMin": 0, "colMax": 850, "colSum": 120000, "dateGrain": null, "hasPriceEvidence": false }
+  ],
+  "ledger": [
+    { "id": "f_units", "measureName": "Units Sold", "kind": "scalar", "value": 120000, "unit": "USD", "sourceColumn": "units_sold", "rendersCurrencySymbol": true, "additivity": "extensive", "aggregation": "sum" }
+  ],
+  "claims": [],
+  "periods": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bind_trend_direction_flip",
+  "domain": "narrative",
+  "description": "BIND-TREND: the narrator says revenue is trending up, but the trend finding direction is down.",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-TREND"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_trend_rev", "measureName": "Revenue trend", "kind": "trend", "value": null, "direction": "down", "seasonalExplained": false }
+  ],
+  "claims": [
+    { "text": "Revenue is on a strong upward trend.", "claimType": "trend_direction", "subject": "revenue", "predicate": "up", "cites": "f_trend_rev" }
+  ],
+  "periods": []
+}

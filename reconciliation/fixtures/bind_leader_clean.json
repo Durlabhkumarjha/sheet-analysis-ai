@@ -1,0 +1,14 @@
+{
+  "name": "bind_leader_correct",
+  "domain": "narrative",
+  "description": "PASS control: the leader claim names 'Phones', the entity the leader finding actually identifies.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_leader_rev", "measureName": "Revenue leader", "kind": "leader", "value": null, "metric": "revenue", "entity": "Phones" }
+  ],
+  "claims": [
+    { "text": "Phones is the top revenue product.", "claimType": "leader", "subject": "revenue", "predicate": "Phones", "cites": "f_leader_rev" }
+  ],
+  "periods": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bind_unbound_claim",
+  "domain": "narrative",
+  "description": "BIND-0: an evaluative leader claim cites no finding at all — the narrator asserted without a backing finding.",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-0"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_leader_rev", "measureName": "Revenue leader", "kind": "leader", "value": null, "metric": "revenue", "entity": "Phones" }
+  ],
+  "claims": [
+    { "text": "Gadgets dominate the lineup.", "claimType": "leader", "subject": "revenue", "predicate": "Gadgets", "cites": null }
+  ],
+  "periods": []
+}

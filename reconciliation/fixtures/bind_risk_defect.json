@@ -1,0 +1,14 @@
+{
+  "name": "bind_risk_below_threshold",
+  "domain": "narrative",
+  "description": "BIND-RISK: the narrator raises a customer-concentration risk that the engine did NOT flag as significant.",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-RISK"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_risk", "measureName": "Concentration risk", "kind": "risk", "value": null, "significanceFlag": false }
+  ],
+  "claims": [
+    { "text": "Customer concentration is a serious risk.", "claimType": "risk_alert", "subject": "concentration", "predicate": "customer concentration", "cites": "f_risk" }
+  ],
+  "periods": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "marketing_duplicate_cac",
+  "domain": "marketing",
+  "description": "CAC is defined two ways (spend/customers vs (spend+overhead)/customers) with different values. Mechanical to detect, judgment to resolve -> C2 REVIEW, not a hard block.",
+  "expect": { "verdict": "REVIEW", "checks": ["C2"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_cac1", "measureName": "CAC", "kind": "scalar", "value": 50, "unit": "USD", "formula": "spend / new_customers", "rendersCurrencySymbol": true, "additivity": "intensive", "aggregation": "none" },
+    { "id": "f_cac2", "measureName": "CAC", "kind": "scalar", "value": 65, "unit": "USD", "formula": "(spend + overhead) / new_customers", "rendersCurrencySymbol": true, "additivity": "intensive", "aggregation": "none" }
+  ],
+  "claims": [],
+  "periods": []
+}

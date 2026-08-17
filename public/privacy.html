@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Sheet Analysis AI</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1e293b; line-height: 1.7; }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; color: #2563eb; }
+    .date { color: #64748b; font-size: 0.9rem; margin-bottom: 2rem; }
+    a { color: #2563eb; }
+    ul { padding-left: 1.2rem; }
+    .highlight { background: #eff6ff; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #2563eb; margin: 1rem 0; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: July 23, 2026</p>
+
+  <div class="highlight">
+    <strong>The short version:</strong> Your spreadsheet files are read and analysed inside your own browser — we never upload or store them. Optional AI features send a small, limited slice of context (column names, types and a few sample rows) to our service to generate a response.
+  </div>
+
+  <h2>1. What Sheet Analysis AI Is</h2>
+  <p>Sheet Analysis AI is a browser-based spreadsheet analysis tool. The analysis engine — parsing, statistics, charts, KPIs and exports — runs entirely in your web browser. A small backend service (a Cloudflare Worker) supports the optional AI features and manages AI credits.</p>
+
+  <h2>2. Your Spreadsheet Files</h2>
+  <p>When you open a CSV or Excel file, it is parsed and analysed <strong>locally in your browser</strong>. The file itself is never uploaded to, or stored on, our servers. Refreshing or closing the page clears it.</p>
+
+  <h2>3. Optional AI Features</h2>
+  <p>Some features are AI-powered — plain-English questions, written summaries, recommendations, AI reports and agents. When you use one of these:</p>
+  <ul>
+    <li>A <strong>limited portion of context</strong> — such as column names, column types and a few sample rows — is sent to our service and on to our AI provider (DeepSeek) solely to generate that response.</li>
+    <li><strong>We do not send your full file.</strong></li>
+    <li>This data is used only to produce your result. We do not use it to train models.</li>
+  </ul>
+  <p>If you connect your own AI provider key instead, those requests go <strong>directly from your browser</strong> to that provider, and your key is stored only in your browser's localStorage — we never receive it.</p>
+
+  <h2>4. Information We Store</h2>
+  <p>To operate AI credits and lifetime licences, we store the following in Cloudflare KV:</p>
+  <ul>
+    <li><strong>An anonymous identifier</strong> generated in your browser (e.g. <code>sai_xxxxx</code>). It contains no name, email or personal details.</li>
+    <li><strong>Your AI credit balance</strong> and usage count.</li>
+    <li><strong>Licence code status</strong>, if you redeemed one, and which identifier it is linked to.</li>
+  </ul>
+  <p>We do <strong>not</strong> require an account and do <strong>not</strong> collect your name, email address, or payment details. Purchases are handled by the marketplace you bought through — we never see your payment information.</p>
+
+  <h2>5. What Your Browser Stores</h2>
+  <p>The app uses your browser's localStorage to remember, between sessions:</p>
+  <ul>
+    <li>Your anonymous identifier</li>
+    <li>Column mapping and report settings (title, company name, currency, brand colour)</li>
+    <li>AI provider/model selection and, if you use one, your own API key</li>
+    <li>Recent file names (not file contents)</li>
+  </ul>
+  <p>You can clear all of this at any time by clearing your browser's site data for this domain.</p>
+
+  <h2>6. Service Providers</h2>
+  <ul>
+    <li><strong>Cloudflare</strong> — hosting, the backend Worker, and KV storage. May record standard technical logs (IP address, request info) for reliability and security.</li>
+    <li><strong>DeepSeek</strong> — AI generation for the features described above. See <a href="https://platform.deepseek.com" target="_blank" rel="noopener">platform.deepseek.com</a>.</li>
+  </ul>
+  <p>If you supply your own provider key, that provider's privacy policy governs those requests (e.g. <a href="https://openai.com/privacy" target="_blank" rel="noopener">OpenAI</a>, <a href="https://ai.google.dev/terms" target="_blank" rel="noopener">Google</a>, <a href="https://groq.com/privacy-policy" target="_blank" rel="noopener">Groq</a>, <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter</a>, <a href="https://mistral.ai/terms" target="_blank" rel="noopener">Mistral</a>).</p>
+
+  <h2>7. Cookies</h2>
+  <p>We do not use cookies, advertising trackers, or third-party analytics. Local storage uses the Web Storage API, which is not transmitted with HTTP requests.</p>
+
+  <h2>8. Data Retention</h2>
+  <p>Because we don't store your files, there is nothing to delete on our side. Credit and licence records are retained while your licence remains active.</p>
+
+  <h2>9. Your Rights</h2>
+  <p>You may request access to, correction of, or deletion of any data linked to your identifier or licence code by emailing us. We will respond within a reasonable period.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>This product is designed for business use. We do not knowingly collect information from children under 16.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>If we make material changes, we will update the "Last updated" date above. We recommend checking this page periodically.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions about privacy? Email <strong><a href="mailto:sheetanalysisai@gmail.com">sheetanalysisai@gmail.com</a></strong>.</p>
+
+  <footer>Sheet Analysis AI · <a href="/terms.html">Terms of Service</a> · <a href="/support.html">Support</a> · <a href="/">Home</a></footer>
+</body>
+</html>

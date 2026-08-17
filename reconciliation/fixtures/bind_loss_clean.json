@@ -1,0 +1,14 @@
+{
+  "name": "bind_loss_in_set",
+  "domain": "narrative",
+  "description": "PASS control: the claim names 'Bookcases', which is in the engine's loss-making set.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_loss", "measureName": "Loss-making products", "kind": "loss_making", "value": null, "members": ["Bookcases", "Tables"] }
+  ],
+  "claims": [
+    { "text": "Bookcases are loss-making this period.", "claimType": "loss_making", "subject": "Bookcases", "predicate": null, "cites": "f_loss" }
+  ],
+  "periods": []
+}

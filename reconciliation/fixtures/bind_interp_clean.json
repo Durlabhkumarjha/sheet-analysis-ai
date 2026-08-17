@@ -1,0 +1,17 @@
+{
+  "name": "bind_interp_price_with_column",
+  "domain": "narrative",
+  "description": "PASS control: the same price-driven interpretation is legitimate because the dataset HAS a unit_price column.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [
+    { "name": "product", "inferredRole": "dimension", "dtype": "str", "distinctCount": 12 },
+    { "name": "unit_price", "inferredRole": "measure", "declaredUnit": "USD", "dtype": "float", "distinctCount": 50, "colMin": 1, "colMax": 90, "colSum": 1000, "hasPriceEvidence": true }
+  ],
+  "ledger": [
+    { "id": "f_interp", "measureName": "Margin interpretation basis", "kind": "interpretation_basis", "value": null }
+  ],
+  "claims": [
+    { "text": "The margin gain is price-driven.", "claimType": "interpretation", "subject": "margin", "predicate": "price_driven", "cites": "f_interp" }
+  ],
+  "periods": []
+}

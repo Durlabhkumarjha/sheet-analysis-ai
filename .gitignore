@@ -1,0 +1,38 @@
+# Local data & large files (never push — these bloat the repo)
+dataset/
+*.mp4
+*.mkv
+*.mov
+UsersdurlaDownloads*
+*.pptx
+
+# Dependencies
+node_modules/
+.npm
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+.vite/
+
+# Environment & secrets (NEVER push these)
+.env
+.env.local
+.env.*.local
+.dev.vars
+wrangler.toml.bak
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cloudflare
+.wrangler/

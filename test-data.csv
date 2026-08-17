@@ -1,0 +1,31 @@
+OrderDate,InvoiceID,CustomerName,Region,Product,Category,Quantity,UnitPrice,Discount,Revenue,Cost
+2026-01-05,INV-2001,TechHub Solutions,North America,Cloud Server Pro,SaaS,3,1200,100,3500,2100
+2026-01-09,INV-2002,GreenLeaf Retail,Europe,Smart POS Terminal,Hardware,10,340,0,3400,2380
+2026-01-14,INV-2003,Apex Distributors,Asia Pacific,Cloud Server Pro,SaaS,1,1200,0,1200,720
+2026-01-18,INV-2004,Metro Supplies Co,North America,Office Suite License,Software,25,80,200,1800,500
+2026-01-22,INV-2005,BrightStar Agency,Europe,Analytics Dashboard,SaaS,2,950,50,1850,760
+2026-01-28,INV-2006,TechHub Solutions,North America,Smart POS Terminal,Hardware,5,340,0,1700,1190
+2026-02-03,INV-2007,OceanTrade Ltd,Asia Pacific,Cloud Server Pro,SaaS,4,1200,200,4600,2880
+2026-02-08,INV-2008,GreenLeaf Retail,Europe,Office Suite License,Software,40,80,0,3200,800
+2026-02-12,INV-2009,Apex Distributors,Asia Pacific,Analytics Dashboard,SaaS,1,950,0,950,380
+2026-02-17,INV-2010,Metro Supplies Co,North America,Smart POS Terminal,Hardware,8,340,100,2620,1904
+2026-02-22,INV-2011,BrightStar Agency,Europe,Cloud Server Pro,SaaS,2,1200,0,2400,1440
+2026-02-27,INV-2012,TechHub Solutions,North America,Office Suite License,Software,15,80,0,1200,300
+2026-03-04,INV-2013,OceanTrade Ltd,Asia Pacific,Smart POS Terminal,Hardware,12,340,200,3880,2856
+2026-03-09,INV-2014,GreenLeaf Retail,Europe,Analytics Dashboard,SaaS,3,950,100,2750,1140
+2026-03-14,INV-2015,Apex Distributors,Asia Pacific,Cloud Server Pro,SaaS,2,1200,0,2400,1440
+2026-03-19,INV-2016,Metro Supplies Co,North America,Office Suite License,Software,30,80,0,2400,600
+2026-03-25,INV-2017,BrightStar Agency,Europe,Smart POS Terminal,Hardware,6,340,50,1990,1428
+2026-03-30,INV-2018,TechHub Solutions,North America,Cloud Server Pro,SaaS,5,1200,300,5700,3600
+2026-04-03,INV-2019,OceanTrade Ltd,Asia Pacific,Analytics Dashboard,SaaS,2,950,0,1900,760
+2026-04-08,INV-2020,GreenLeaf Retail,Europe,Office Suite License,Software,20,80,100,1500,400
+2026-04-12,INV-2021,Apex Distributors,Asia Pacific,Smart POS Terminal,Hardware,4,340,0,1360,952
+2026-04-17,INV-2022,Metro Supplies Co,North America,Cloud Server Pro,SaaS,3,1200,150,3450,2160
+2026-04-22,INV-2023,BrightStar Agency,Europe,Analytics Dashboard,SaaS,4,950,200,3600,1520
+2026-04-28,INV-2024,TechHub Solutions,North America,Smart POS Terminal,Hardware,7,340,0,2380,1666
+2026-05-02,INV-2025,OceanTrade Ltd,Asia Pacific,Cloud Server Pro,SaaS,6,1200,400,6800,4320
+2026-05-07,INV-2026,GreenLeaf Retail,Europe,Smart POS Terminal,Hardware,15,340,300,4800,3570
+2026-05-11,INV-2027,Apex Distributors,Asia Pacific,Office Suite License,Software,50,80,0,4000,1000
+2026-05-15,INV-2028,Metro Supplies Co,North America,Analytics Dashboard,SaaS,5,950,100,4650,1900
+2026-05-20,INV-2029,BrightStar Agency,Europe,Cloud Server Pro,SaaS,3,1200,0,3600,2160
+2026-05-25,INV-2030,TechHub Solutions,North America,Office Suite License,Software,35,80,200,2600,700

@@ -1,0 +1,17 @@
+{
+  "name": "bind_interp_price_no_column",
+  "domain": "narrative",
+  "description": "BIND-INTERP: the narrator calls the margin gain 'price-driven', but the dataset has no price column at all (only product and revenue).",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-INTERP"] },
+  "columns": [
+    { "name": "product", "inferredRole": "dimension", "dtype": "str", "distinctCount": 12 },
+    { "name": "revenue", "inferredRole": "measure", "declaredUnit": "USD", "dtype": "float", "distinctCount": 400, "colMin": 5, "colMax": 4200, "colSum": 250000 }
+  ],
+  "ledger": [
+    { "id": "f_interp", "measureName": "Margin interpretation basis", "kind": "interpretation_basis", "value": null }
+  ],
+  "claims": [
+    { "text": "The margin gain is price-driven.", "claimType": "interpretation", "subject": "margin", "predicate": "price_driven", "cites": "f_interp" }
+  ],
+  "periods": []
+}

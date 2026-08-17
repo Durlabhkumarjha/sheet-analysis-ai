@@ -1,0 +1,14 @@
+{
+  "name": "bind_risk_significant",
+  "domain": "narrative",
+  "description": "PASS control: the raised risk cites a finding the engine flagged significant.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_risk", "measureName": "Concentration risk", "kind": "risk", "value": null, "significanceFlag": true }
+  ],
+  "claims": [
+    { "text": "Customer concentration is a serious risk.", "claimType": "risk_alert", "subject": "concentration", "predicate": "customer concentration", "cites": "f_risk" }
+  ],
+  "periods": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bind_loss_not_in_set",
+  "domain": "narrative",
+  "description": "BIND-LOSS: the narrator calls 'Tables' loss-making, but the engine's loss-making set is only [Bookcases].",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-LOSS"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_loss", "measureName": "Loss-making products", "kind": "loss_making", "value": null, "members": ["Bookcases"] }
+  ],
+  "claims": [
+    { "text": "Tables are losing money.", "claimType": "loss_making", "subject": "Tables", "predicate": null, "cites": "f_loss" }
+  ],
+  "periods": []
+}

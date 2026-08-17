@@ -1,0 +1,14 @@
+{
+  "name": "bind_leader_binders_mismatch",
+  "domain": "narrative",
+  "description": "BIND-LEADER: the narrator claims 'Binders' leads revenue, but the leader finding identifies 'Phones'. Wrong ENTITY, no number for the numeric gate to catch.",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-LEADER"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_leader_rev", "measureName": "Revenue leader", "kind": "leader", "value": null, "metric": "revenue", "entity": "Phones" }
+  ],
+  "claims": [
+    { "text": "Binders outsells all products.", "claimType": "leader", "subject": "revenue", "predicate": "Binders", "cites": "f_leader_rev" }
+  ],
+  "periods": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "xfoot_row_base_mismatch",
+  "domain": "narrative",
+  "description": "XFOOT: total revenue reconstructed along two paths disagrees — KPIs summed one row base, the trend summed another (the 40k vs 99k row-base bug).",
+  "expect": { "verdict": "BLOCK", "checks": ["XFOOT"] },
+  "columns": [],
+  "ledger": [],
+  "claims": [],
+  "periods": [],
+  "crossFoot": [
+    { "label": "total revenue", "paths": { "kpi_path": 250000.0, "trend_path": 618000.0 } }
+  ]
+}

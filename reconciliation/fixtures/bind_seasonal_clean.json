@@ -1,0 +1,14 @@
+{
+  "name": "bind_seasonal_acknowledged",
+  "domain": "narrative",
+  "description": "PASS control: the same seasonal dip is stated as a matching direction ('down'), not raised as a concern, so BIND-SEASONAL does not fire and the trend direction binds cleanly.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_trend_q4", "measureName": "Q4 revenue trend", "kind": "trend", "value": null, "direction": "down", "seasonalExplained": true }
+  ],
+  "claims": [
+    { "text": "December revenue is down, in line with the usual seasonal pattern.", "claimType": "trend_direction", "subject": "revenue", "predicate": "down", "cites": "f_trend_q4" }
+  ],
+  "periods": []
+}

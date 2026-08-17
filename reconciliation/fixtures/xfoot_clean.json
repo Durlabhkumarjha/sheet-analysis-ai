@@ -1,0 +1,13 @@
+{
+  "name": "xfoot_paths_agree",
+  "domain": "narrative",
+  "description": "PASS control: the same total reconciles across both aggregation paths within tolerance.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [],
+  "ledger": [],
+  "claims": [],
+  "periods": [],
+  "crossFoot": [
+    { "label": "total revenue", "paths": { "kpi_path": 250000.0, "trend_path": 250000.0 } }
+  ]
+}

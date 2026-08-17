@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- Chart bars -->
+  <rect x="100" y="280" width="64" height="120" rx="8" fill="url(#bar1)" opacity="0.9"/>
+  <rect x="184" y="220" width="64" height="180" rx="8" fill="url(#bar2)" opacity="0.9"/>
+  <rect x="268" y="160" width="64" height="240" rx="8" fill="url(#bar1)" opacity="0.9"/>
+  <rect x="352" y="120" width="64" height="280" rx="8" fill="url(#bar2)" opacity="0.9"/>
+  <!-- AI spark / brain circle -->
+  <circle cx="384" cy="110" r="40" fill="white" opacity="0.95"/>
+  <text x="384" y="122" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#2563eb">AI</text>
+  <!-- Trend line -->
+  <path d="M 130 330 L 216 270 L 300 220 L 384 170" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+  <!-- Dots on trend -->
+  <circle cx="130" cy="330" r="6" fill="white" opacity="0.8"/>
+  <circle cx="216" cy="270" r="6" fill="white" opacity="0.8"/>
+  <circle cx="300" cy="220" r="6" fill="white" opacity="0.8"/>
+  <circle cx="384" cy="170" r="6" fill="white" opacity="0.8"/>
+</svg>

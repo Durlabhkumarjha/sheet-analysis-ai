@@ -1,0 +1,17 @@
+{
+  "name": "marketing_clean_consistent_cac",
+  "domain": "marketing",
+  "description": "PASS control: a single CAC, recomputed from its extensive numerator (spend) and denominator (new_customers) rather than averaged. One definition, so C2 stays silent and C10 is satisfied.",
+  "expect": { "verdict": "PASS", "checks": [] },
+  "columns": [
+    { "name": "spend", "inferredRole": "measure", "declaredUnit": "USD", "dtype": "float", "distinctCount": 50, "colMin": 0, "colMax": 100000, "colSum": 100000, "dateGrain": null, "hasPriceEvidence": true },
+    { "name": "new_customers", "inferredRole": "measure", "declaredUnit": "customers", "dtype": "int", "distinctCount": 30, "colMin": 0, "colMax": 2000, "colSum": 2000, "dateGrain": null, "hasPriceEvidence": false }
+  ],
+  "ledger": [
+    { "id": "f_spend", "measureName": "Marketing Spend", "kind": "scalar", "value": 100000, "unit": "USD", "sourceColumn": "spend", "rendersCurrencySymbol": true, "additivity": "extensive", "aggregation": "sum" },
+    { "id": "f_newcust", "measureName": "New Customers", "kind": "scalar", "value": 2000, "unit": "customers", "sourceColumn": "new_customers", "additivity": "extensive", "aggregation": "sum" },
+    { "id": "f_cac", "measureName": "CAC", "kind": "scalar", "value": 50, "unit": "USD", "formula": "spend / new_customers", "rendersCurrencySymbol": true, "additivity": "intensive", "aggregation": "recomputed", "numeratorId": "f_spend", "denominatorId": "f_newcust" }
+  ],
+  "claims": [],
+  "periods": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "expense_mixed_sign_share",
+  "domain": "expense",
+  "description": "A vendor share is computed over a net_amount column that mixes charges and refunds (min -5000, max 18000). C12 must block share math over a signed pool.",
+  "expect": { "verdict": "BLOCK", "checks": ["C12"] },
+  "columns": [
+    { "name": "net_amount", "inferredRole": "measure", "declaredUnit": "USD", "dtype": "float", "distinctCount": 500, "colMin": -5000, "colMax": 18000, "colSum": 90000, "dateGrain": null, "hasPriceEvidence": true }
+  ],
+  "ledger": [
+    { "id": "f_total", "measureName": "Net Spend", "kind": "scalar", "value": 90000, "unit": "USD", "sourceColumn": "net_amount", "rendersCurrencySymbol": true, "additivity": "extensive", "aggregation": "sum" },
+    { "id": "f_part", "measureName": "Top vendor net", "kind": "scalar", "value": 30000, "unit": "USD", "sourceColumn": "net_amount", "rendersCurrencySymbol": true, "additivity": "extensive", "aggregation": "sum" },
+    { "id": "f_pct", "measureName": "Top vendor share", "kind": "percent", "value": 33.33, "partId": "f_part", "denominatorId": "f_total", "sourceColumn": "net_amount" }
+  ],
+  "claims": [],
+  "periods": []
+}

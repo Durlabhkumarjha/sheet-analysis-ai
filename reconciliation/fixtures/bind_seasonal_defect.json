@@ -1,0 +1,14 @@
+{
+  "name": "bind_seasonal_trough_alarm",
+  "domain": "narrative",
+  "description": "BIND-SEASONAL: the narrator alarms about a 29.2% December decline and tells the owner to 'investigate', but the trend finding marks the change as the known seasonal pattern.",
+  "expect": { "verdict": "BLOCK", "checks": ["BIND-SEASONAL"] },
+  "columns": [],
+  "ledger": [
+    { "id": "f_trend_q4", "measureName": "Q4 revenue trend", "kind": "trend", "value": null, "direction": "down", "seasonalExplained": true }
+  ],
+  "claims": [
+    { "text": "Revenue fell 29.2% in December — investigate the decline.", "claimType": "trend_direction", "subject": "revenue", "predicate": "concern", "cites": "f_trend_q4" }
+  ],
+  "periods": []
+}

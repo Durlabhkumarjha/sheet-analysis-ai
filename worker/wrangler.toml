@@ -1,0 +1,21 @@
+name = "sheet-analysis-ai"
+main = "index.js"
+compatibility_date = "2024-11-01"
+
+# ---------------------------------------------------------------------------
+# API key is a SECRET — do NOT put it in this file or in the code.
+# Set it once from the worker/ folder with:
+#
+#   wrangler secret put DEEPSEEK_KEY
+#
+# Deploy with:   wrangler deploy
+# Local test:    wrangler dev
+# ---------------------------------------------------------------------------
+#
+# Credit tracking requires a KV namespace. Create it first:
+#   wrangler kv namespace create CREDITS
+# Then paste the binding below (uncomment and fill in the id):
+#
+# [[kv_namespaces]]
+# binding = "CREDITS"
+# id = "YOUR_KV_NAMESPACE_ID"
