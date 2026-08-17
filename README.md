@@ -24,6 +24,7 @@ Upload a CSV or Excel file and get an instant dashboard, plain-English answers, 
 - **💬 Talk to your data** — ask a question in plain English ("which region is growing fastest?") and get a sourced answer with a chart.
 - **📈 Deep analysis** — a full AI report, hidden-pattern detection, and specialist agents, on demand.
 - **✅ Verified numbers** — every figure is reconciled back to your file; anything it can't verify is never shown.
+- **⚡ Handles up to 100,000 rows — entirely in your browser.** No server, no upload, no waiting on a backend. All parsing, statistics and charting run client-side on your machine.
 - **🔒 Private by design** — your file is parsed and analysed in your browser and is never uploaded to a server.
 
 ---
