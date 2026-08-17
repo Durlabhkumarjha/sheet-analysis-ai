@@ -35,4 +35,4 @@ wrangler.toml.bak
 npm-debug.log*
 
 # Cloudflare
-.wrangler/
+.wrangler/.claude/
